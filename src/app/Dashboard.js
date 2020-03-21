@@ -18,7 +18,7 @@ export default function Dashboard() {
         return (
             <div>
                 <Form>
-                    <Form.Group controlId="exampleForm.SelectCustom">
+                    <Form.Group controlId="form.selectCountry">
                         <Form.Label>Select a Country</Form.Label>
                         <Form.Control as="select" defaultValue={country} onChange={e => {setCountry(e.target.value)}}>
                             <option key="_">World</option>
