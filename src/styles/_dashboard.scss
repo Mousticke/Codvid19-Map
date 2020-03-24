@@ -1,8 +1,58 @@
-.dashboard-part{
-    margin-bottom: 1rem;
+.dashboard-part {
+  margin-bottom: 1rem;
 
-    .card{
-        margin: 0.5rem;
-    }
+  .card {
+    margin: 0.5rem;
+  }
 }
 
+.leaflet-container {
+  height: 90vh;
+}
+
+.form-label, h1,h2,h3,h5,h5, p, span {
+    color: var(--color-contrast-higher);
+}
+
+.card {
+    background-color: var(--color-contrast-lower);
+    box-shadow: 0 0 0.4rem 0 rgba(4,2,2,.2) ;
+    border: 1px solid var(--color-contrast-low);
+}
+.card-body{
+    text-align: center;
+}
+.profile-img{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 1rem;
+    width: 0.5rem;
+    height: 0.5rem;
+    overflow: hidden;
+    padding: 1.1rem;
+}
+
+.card-info-number{
+    font-size: 1.5rem;
+    color: var(--color-contrast-higher);
+    font-weight: 600;
+}
+
+.bg-custom-success {
+    background: rgba(0,224,147,.2);
+}
+
+
+.bg-custom-primary {
+    background: rgba(77,138,240,.2);
+}
+
+
+.bg-custom-danger {
+    background: rgba(255,95,102,.2);
+}

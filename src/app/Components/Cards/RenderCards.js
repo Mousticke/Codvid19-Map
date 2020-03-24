@@ -18,16 +18,16 @@ export default function RenderCards({loading, data, error}) {
             
             return (
                 <>
-                    <CardData bodyTitle="Confirmed" data={data.confirmed.value} colorStyle="primary" fontIcon={faUserMd}/>
-                    <CardData bodyTitle="Recovered" data={data.recovered.value} colorStyle="success" fontIcon={faHandHoldingMedical}/>
-                    <CardData bodyTitle="Death" data={data.deaths.value} colorStyle="danger" fontIcon={faSkullCrossbones}/>
+                    <CardData bodyTitle="Confirmed" data={data.confirmed.value} colorStyle="primary" fontIcon={faUserMd} bgIconCustom="bg-custom-primary"/>
+                    <CardData bodyTitle="Recovered" data={data.recovered.value} colorStyle="success" fontIcon={faHandHoldingMedical} bgIconCustom="bg-custom-success"/>
+                    <CardData bodyTitle="Death" data={data.deaths.value} colorStyle="danger" fontIcon={faSkullCrossbones} bgIconCustom="bg-custom-danger"/>
                 </>
             )
         }
     }
 
     return (
-        <Row className='justify-content-around'>
+        <Row className='justify-content-center'>
             {renderData()}
         </Row>
     )

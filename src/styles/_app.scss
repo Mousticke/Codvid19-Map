@@ -1,14 +1,40 @@
 .App {
-    max-height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: 
-        "header-nav"
-        "main"
-        "footer";
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "header-nav"
+    "main"
+    "footer";
 }
 
-.header-nav{
-    margin-bottom: 1rem;
+.svgVirus {
+  width: 2rem;
+  fill: var(--color-primary);
+}
+
+.header-nav {
+  margin-bottom: 1rem;
+  background-color: #0e1627;
+  border-bottom: 1px solid var(--color-contrast-low);
+  box-shadow: 0 0 1rem 0 rgba(197, 181, 181, 0.2);
+
+  .nav-brand {
+    font-weight: 600;
+}
+
+  a,
+  .nav-brand {
+    color: #f1f1f1 !important;
+  }
+
+  a {
+    transition-duration: 0.25s;
+    transition-timing-function: cubic-bezier(0.26, 0.66, 0.45, 0.78);
+    transition-property: background;
+  }
+
+  a:hover {
+    background: var(--color-contrast-low);
+  }
 }

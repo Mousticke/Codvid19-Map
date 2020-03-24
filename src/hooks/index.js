@@ -6,7 +6,7 @@ export function useData(apiURL) {
     const [data, setData] = useState();
     const [error, setError] = useState(false);
     const [loading, setLoading] = useState(true);
-
+    
     useEffect(() => {
         const fetchAPI = async () => {
             setError(false);

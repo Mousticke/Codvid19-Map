@@ -17,7 +17,7 @@ export default function Dashboard() {
         return (<Spinner animation="grow" variant="primary" />)
     } else {
         return (
-            <Container>
+            <Container className="main">
                 <Row className="dashboard-part">
                     <Col sm={6}>
                         <Form className="filter-data">
